@@ -21,13 +21,18 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
   gap: 96px;
+  max-width: 827px;
+  min-width: 827px;
+  padding-top: 140px;
 }
 
-
+#annf{
+  margin: -70px 0px 0px 0px;
+}
 
 
 /* Portfolio Header */
@@ -35,14 +40,14 @@ body {
 #portfolio-header {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: left;
 }
 
 #portfolio-header-image-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex-basis: 50%;
+  margin: -80px 0px 0px 0px;
 }
 
 .portfolio-header-image {
@@ -55,6 +60,7 @@ body {
   flex-direction: column;
   gap: 34px;
   flex-basis: 50%;
+  margin: -20px 0px 0px 0px;
 }
 
 
@@ -66,8 +72,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: -70px 0px 0px 0px;
 }
+li{
 
+  padding:6px
+  
+  }
 .about-section-content {
   display: flex;
   flex-direction: column;
@@ -83,6 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: -70px 0px 20px 0px;
 }
 
 .projects-container {
@@ -173,31 +185,30 @@ body {
 
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
   #main-content {
     margin: 225px 275px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   #main-content {
     margin: 225px 175px;
   }
 }
 
 /* Large devices (laptops/desktops, 1000px and below) */
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   #main-content {
     margin: 225px 75px;
   }
-}
-
+}   */
 /* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   #main-content {
     margin: 150px 50px;
-  }
+  } */
 
   #portfolio-header {
     flex-direction: column;
@@ -206,18 +217,16 @@ body {
   .project-card {
     max-width: calc((100% - 16px) / 2);
   }
-}
 
 /* Small devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
-  }
+  } */
 
   .project-card {
     max-width: 100%;
   }
-}
 
 
 

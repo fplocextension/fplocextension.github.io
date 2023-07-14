@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/1311.png" />
+		<title>FP-Loc 2.0</title>
+    <meta name="description" content="A Floor Plan Assited Localization Framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">FP-Loc 2.0</Frame></span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <ul id="nav">
+          <li><a class="project" href="index.html">
+            <span style = "font-size:20px" class="button-text">Home</span>
+          </a></li>
+          <li><a class="project" href="FP_RECOV.html">
+            <span style = "font-size:20px" class="button-text">FP-Recov</span>
+          </a></li>
+          <li><a class="project" href="annf.html">
+            <span style = "font-size:20px" class="button-text">ANNF</span>
+          </a></li>
+          <li><a class="project" href="FloodFill.html">
+            <span style = "font-size:20px; color:#125f95" class="button-text">Flood Fill</span>
+          </a></li>
+          <li><a class="project" href="VDataset.html">
+            <span style = "font-size:20px" class="button-text">Virtual Dataset</span>
+          </a></li>
+          <li><a style = "font-size:20px" class="project" href="mailto:wsxerwin@gmail.com">
+            <span style = "font-size:20px" class="button-text">Contact Us</span>
+          </a></li>
+        </ul>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+      
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Flood Fill</span>
+              <div class="body-text"> A plane segmentation algorithm for lidar point clouds designed for floor plan matching (with code)..</Frame></div>
+            </div>
+            <!-- <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <!-- <span class="subheader-text">My Background / About Me</span> -->
+        <div class="about-section-content" style="font-family: Georgia">
+          <ul>
+            <li>An <strong>efficient framework</strong> that can achieve robust and long-term localization, given a floor plan as prior, without being affected by position available objects. This framework provides a good case study on how to fully utilize prior information for localization (with code).  </li>
+            <li><a class= "link" href="./FP_RECOV.html">FP-Recov</a>: A simple and effective <strong>algorithm for  extracting semantic information</strong> from floor plan images.</li>
+            <li><a class= "link" href="./FloodFill.html">Flood Fill</a>: A <strong> plane segmentation algorithm</strong> for lidar point clouds designed for floor plan matching (with code).</li>
+            <li><a class= "link" href="./annf.html">ANNF</a>: A <strong>novel data structure</strong> in the form of an
+              approximate nearest neighbour field (ANNF) which
+              enables an efficient look-up of the nearest geometric
+              floor plan elements (e.g. wall segments) for any given
+              point in the localization space.</li>
+            <li>A <a class= "link" href="./VDataset.html">virtual dataset pipeline</a> designed to test  proposed algorithm. This pipeline can automatically convert SVG format floor plans into 3d models in gazebo, and preserve connectivity information such as doors, generate clutter according to rules. At the same time, this pipeline can also automatically plan paths in the model according to hand-drawn points and simulate the motion of lidar and IMU, and obtain simulated sensor data (with code).</li>
+          </ul>
+        </div>
+      </div> 
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <span class="subheader-text">The Framework</span>
+        <div class="about-section-content" style="font-family: Georgia">
+          <span>Given a floor plan, we can perform long-term localization without being affected by 
+          position available furniture. First, we use <a class= "link" href="./FP_RECOV.html">FP-Recov</a> to
+           recover semantic information from the given floor plan image and 
+           convert it to Scalable Vector Graphics (SVG) format. 
+           Then, we construct an <a class= "link" href="./annf.html">ANNF</a>
+            to quickly find the nearest neighbor geometric element.
+             At the same time, we use <a class= "link" href="./FloodFill.html">Flood Fill</a>
+              to segment the point cloud data and obtain usable planes. 
+              We use these planes to predict and maintain gravity, 
+              calculate the 3-DOF pose, and perform matching with the ANNF 
+              to obtain the other 3-DOF pose, and finally perform joint optimization.</span>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">Citation</span>
+        <span style="font-family: Georgia">Please cite the following publication when using this project in an academic context:</span>
+        <span style="font-family: Georgia"><strong>FP-Loc: Lightweight and Drift-free Floor Plan-assisted LiDAR Localization</strong></span>
+        <span style="font-family: Georgia">L. Gao, L. Kneip</span>
+        <div><i>International Conference on Robotics and Automation (ICRA) (<b>ECCV</b>)</i>, 2022</div>
+        <span class="link"><a class= "link" href="https://arxiv.org/abs/2203.00292">[Arxiv]</a>  <a class= "link"  href="#">[Code
+          and Data]</a></span>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- <div id="footer"> -->
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <!-- <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a> -->
+    <!-- </div> -->
+<!--  -->
+	</body>
+</html>

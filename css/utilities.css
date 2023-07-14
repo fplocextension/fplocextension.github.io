@@ -35,6 +35,7 @@ a.icon-link:hover {
   position: fixed;
   top: 0;
   left: 0;
+  min-width: 827px;
 }
 
 .nav-title-link {
@@ -43,11 +44,11 @@ a.icon-link:hover {
 }
 
 .nav-title-link:hover {
-  text-decoration: underline;
+  text-decoration:none;
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 100px) {
   .navbar {
     padding: 20px 20px;
     background-color: white
@@ -56,6 +57,16 @@ a.icon-link:hover {
 
 
 /* Button Styling */
+#nav li {
+  display: inline;     
+}         
+  
+a.project{
+  color: black;   
+  font-family:" Georgia";
+  font-size: 20px;
+  text-decoration:none;
+}
 
 a.button {
   padding: 8px 16px;
@@ -65,8 +76,6 @@ a.button {
   text-decoration: none;
   width: fit-content;
   display: flex;
-  gap: 5px;
-  align-items: center;
 }
 
 a.button:hover {
@@ -75,6 +84,19 @@ a.button:hover {
   cursor: pointer;
 }
 
+span.link {
+  color:#1269a7;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+a.link:link {
+  color:#1269a7;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
 
 /* Footer Styling */
 
