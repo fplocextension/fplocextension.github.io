@@ -1,19 +1,8 @@
-
-
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+
     <!-- 
       TODO
 
@@ -24,141 +13,161 @@
 
       This should be the same across all pages.
      -->
-     <link rel="icon" href="../assets/images/1311.png" />
-     <title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <link rel="icon" href="./assets/images/1311.png" />
+		<title>FP-Loc 2.0</title>
+    <meta name="description" content="A Floor Plan Assited Localization Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/typography.css">
-    <link rel="stylesheet" href="../css/utilities.css">
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
 
-		<script defer src="../js/script.js"></script>
+		<script defer src="./js/script.js"></script>
 	</head>
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
-
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Portfolio Title</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
-          <span class="button-text">Contact Me</span>
-        </a>
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">FP-Loc 2.0</Frame></span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <ul id="nav">
+          <li><a class="project" href="index.html">
+            <span style = "font-size:20px; color:#125f95" class="button-text">Home</span>
+          </a></li>
+          <li><a class="project" href="FP_RECOV.html">
+            <span style = "font-size:20px" class="button-text">FP-Recov</span>
+          </a></li>
+          <li><a class="project" href="annf.html">
+            <span style = "font-size:20px" class="button-text">ANNF</span>
+          </a></li>
+          <li><a class="project" href="FloodFill.html">
+            <span style = "font-size:20px" class="button-text">Flood Fill</span>
+          </a></li>
+          <li><a class="project" href="VDataset.html">
+            <span style = "font-size:20px" class="button-text">Virtual Dataset</span>
+          </a></li>
+          <li><a style = "font-size:20px" class="project" href="mailto:wsxerwin@gmail.com">
+            <span style = "font-size:20px" class="button-text">Contact Us</span>
+          </a></li>
+        </ul>
       </a>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 
-      <!-- PROJECT HEADER -->
-      <div id="project-header">
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">FP-Loc 2.0</span>
+              <div class="body-text">A Floor Plan Assited Localization Framework</Frame></div>
+            </div>
+            <!-- <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+        </div>
+      </div>
+
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
           <!-- 
             TODO
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+          <img src="./assets/images/framework.png" class="portfolio-header-image">
+          <!-- <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Unemployables #1311</span>
+          </a> -->
+        </div>
       </div>
 
-      <!-- PROJECT DETAILS -->
+      <!-- ABOUT SECTION -->
       <!-- 
         TODO
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
-      <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
-        <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+      <div id="about-section">
+        <!-- <span class="subheader-text">My Background / About Me</span> -->
+        <div class="about-section-content" style="font-family: Georgia">
+          <ul>
+            <li>An <strong>efficient framework</strong> that can achieve robust and long-term localization, given a floor plan as prior, without being affected by position available objects. This framework provides a good case study on how to fully utilize prior information for localization (with code).  </li>
+            <li><a class= "link" href="./FP_RECOV.html">FP-Recov</a>: A simple and effective <strong>algorithm for  extracting semantic information</strong> from floor plan images.</li>
+            <li><a class= "link" href="./FloodFill.html">Flood Fill</a>: A <strong> plane segmentation algorithm</strong> for lidar point clouds designed for floor plan matching (with code).</li>
+            <li><a class= "link" href="./annf.html">ANNF</a>: A <strong>novel data structure</strong> in the form of an
+              approximate nearest neighbour field (ANNF) which
+              enables an efficient look-up of the nearest geometric
+              floor plan elements (e.g. wall segments) for any given
+              point in the localization space.</li>
+            <li>A <a class= "link" href="./VDataset.html">virtual dataset pipeline</a> designed to test  proposed algorithm. This pipeline can automatically convert SVG format floor plans into 3d models in gazebo, and preserve connectivity information such as doors, generate clutter according to rules. At the same time, this pipeline can also automatically plan paths in the model according to hand-drawn points and simulate the motion of lidar and IMU, and obtain simulated sensor data (with code).</li>
+          </ul>
+        </div>
+      </div> 
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <span class="subheader-text">The Framework</span>
+        <div class="about-section-content" style="font-family: Georgia">
+          <span>Given a floor plan, we can perform long-term localization without being affected by 
+          position available furniture. First, we use <a class= "link" href="./FP_RECOV.html">FP-Recov</a> to
+           recover semantic information from the given floor plan image and 
+           convert it to Scalable Vector Graphics (SVG) format. 
+           Then, we construct an <a class= "link" href="./annf.html">ANNF</a>
+            to quickly find the nearest neighbor geometric element.
+             At the same time, we use <a class= "link" href="./FloodFill.html">Flood Fill</a>
+              to segment the point cloud data and obtain usable planes. 
+              We use these planes to predict and maintain gravity, 
+              calculate the 3-DOF pose, and perform matching with the ANNF 
+              to obtain the other 3-DOF pose, and finally perform joint optimization.</span>
         </div>
       </div>
 
-      <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!-- 
-              TODO
-
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-              Full Width Image:
-
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-        </div>
-      </div>
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">Citation</span>
+        <span style="font-family: Georgia">Please cite the following publication when using this project in an academic context:</span>
+        <span style="font-family: Georgia"><strong>FP-Loc: Lightweight and Drift-free Floor Plan-assisted LiDAR Localization</strong></span>
+        <span style="font-family: Georgia">L. Gao, L. Kneip</span>
+        <div><i>International Conference on Robotics and Automation (ICRA) (<b>ECCV</b>)</i>, 2022</div>
+        <span class="link"><a class= "link" href="https://arxiv.org/abs/2203.00292">[Arxiv]</a>  <a class= "link"  href="#">[Code
+          and Data]</a></span>
     </div>
 
     <!-- FOOTER -->
-    <div id="footer">
+    <!-- <div id="footer"> -->
       <!-- 
         TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a> -->
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a> -->
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
-
+      <!-- <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a> -->
+    <!-- </div> -->
+<!--  -->
 	</body>
 </html>
