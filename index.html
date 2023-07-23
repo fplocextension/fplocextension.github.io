@@ -15,7 +15,7 @@
      -->
     <!-- <link rel="icon" href="./assets/images/1311.png" /> -->
 		<title>FP-Loc 2.0</title>
-    <meta name="description" content="A Floor Plan Assited Localization Framework">
+    <meta name="description" content="A Floor Plan Assisted Localization Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -71,21 +71,6 @@
         </div>
       </div>
 
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
-
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
-          <img src="./assets/images/frameworks.png" class="portfolio-header-image">
-          <!-- <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
-          </a> -->
-        </div>
-      </div>
 
       <!-- ABOUT SECTION -->
       <!-- 
@@ -98,7 +83,7 @@
         <!-- <span class="subheader-text">My Background / About Me</span> -->
         <div class="about-section-content" style="font-family: Georgia">
           <ul>
-            <li>An <strong>efficient framework</strong> that can achieve robust and long-term localization, given a floor plan as prior, without being affected by position available objects. This framework provides a good case study on how to fully utilize prior information for localization.  </li>
+            <li>An <strong>efficient framework</strong> that can achieve robust and long-term localization, given a floor plan as prior, without being affected by position-available objects. This framework provides a good case study on how to fully utilize prior information for localization.  </li>
             <li><a class= "link" href="./FP_RECOV.html">FP-Recov</a>: A simple and effective <strong>algorithm for  extracting semantic information</strong> from floor plan images.</li>
             <li><a class= "link" href="./FloodFill.html">Flood Fill</a>: A <strong> plane
                segmentation algorithm</strong> 
@@ -126,7 +111,7 @@
         <span class="subheader-text">The Framework</span>
         <div class="about-section-content" style="font-family: Georgia">
           <span>Given a floor plan, we can perform long-term localization without being affected by 
-          position available furniture. First, we use <a class= "link" href="./FP_RECOV.html">FP-Recov</a> to
+          position-available furniture. First, we use <a class= "link" href="./FP_RECOV.html">FP-Recov</a> to
            recover semantic information from the given floor plan image and 
            convert it to Scalable Vector Graphics (SVG) format. 
            Then, we construct an <a class= "link" href="./annf.html">ANNF</a>
@@ -134,11 +119,26 @@
              At the same time, we use <a class= "link" href="./FloodFill.html">Flood Fill</a>
               to segment the point cloud data and obtain usable planes. 
               We use these planes to predict and maintain gravity, 
-              calculate the 3-DOF pose, and perform matching with the ANNF 
+              calculate the 3-DOF pose, perform matching with the ANNF 
               to obtain the other 3-DOF pose, and finally perform joint optimization.</span>
         </div>
       </div>
 
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/frameworks.png" class="portfolio-header-image">
+          <!-- <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <span class="image-caption">Unemployables #1311</span>
+          </a> -->
+        </div>
+      </div>
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
@@ -147,7 +147,10 @@
         <span style="font-family: Georgia"><strong>FP-Loc: Lightweight and Drift-free Floor Plan-assisted LiDAR Localization</strong></span>
         <span style="font-family: Georgia">L. Gao, L. Kneip</span>
         <div><i>International Conference on Robotics and Automation (<b>ICRA</b>)</i>, 2022</div>
-        <span class="link"><a class= "link" href="https://arxiv.org/abs/2203.00292">[Arxiv]</a> </span>
+        <span class="link"><a class= "link" href="https://arxiv.org/abs/2203.00292">[Arxiv]</a> 
+          <a class= "link" href="https://www.youtube.com/watch?v=J5wq648IBi4&ab_channel=MobilePerceptionLab">[YouTube]</a>
+           <a class= "link" href="https://www.bilibili.com/video/BV145411R7hg/?spm_id_from=333.999.0.0">[BiliBili]</a> 
+        </span>
     </div>
 
     <!-- FOOTER -->

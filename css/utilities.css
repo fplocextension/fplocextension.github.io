@@ -23,8 +23,15 @@ a.icon-link:hover {
   margin: 0;
   transform: rotate(15deg);
 }
-
-
+iframe{
+  margin: -130px 0px -20px 0px;
+}
+span.demo{
+  margin: -80px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  z-index:999
+}
 /* Navbar Styling */
 
 .navbar {
